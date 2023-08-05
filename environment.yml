@@ -1,0 +1,13 @@
+name: vectorization
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - polars
+  - ibis-framework[duckdb]
+  - pydiverse-pipedag
+  - pydiverse-transform
+  - jupyter
