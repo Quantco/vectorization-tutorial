@@ -112,9 +112,9 @@ def evaluate_model(features_test: pd.DataFrame, target_test: pd.DataFrame, model
 
 def get_pipeline():
     with Flow("vectorization") as flow:
-        with Stage("raw_input"):
+        with Stage("01_raw_input"):
             data_df = read_input_data()
-        with Stage("features"):
+        with Stage("02_features"):
             features_df, target_df = combine_features(data_df)
             (
                 features_train,
@@ -122,9 +122,9 @@ def get_pipeline():
                 target_train,
                 target_test,
             ) = split_train_test(features_df, target_df)
-        with Stage("model"):
+        with Stage("03_model"):
             model = train_model(features_train, target_train)
-        with Stage("evaluation"):
+        with Stage("04_evaluation"):
             evaluate_model(features_test, target_test, model)
     return flow
 
