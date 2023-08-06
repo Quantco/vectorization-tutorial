@@ -3,6 +3,7 @@ instances:
     network_interface: "127.0.0.1"
     auto_table:
       - "pandas.DataFrame"
+      - "pydiverse.transform.Table"
       - "sqlalchemy.sql.expression.TextClause"
       - "sqlalchemy.sql.expression.Selectable"
 
