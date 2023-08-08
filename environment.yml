@@ -14,4 +14,5 @@ dependencies:
   - xgboost
   - scikit-learn
   - matplotlib
+  - connectorx
   - jupyter

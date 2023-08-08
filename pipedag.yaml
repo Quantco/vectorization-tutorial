@@ -3,7 +3,9 @@ instances:
     network_interface: "127.0.0.1"
     auto_table:
       - "pandas.DataFrame"
+      - "polars.DataFrame"
       - "pydiverse.transform.Table"
+      - "ibis.api.Table"
       - "sqlalchemy.sql.expression.TextClause"
       - "sqlalchemy.sql.expression.Selectable"
 
