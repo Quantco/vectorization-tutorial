@@ -20,3 +20,5 @@ Disclaimer: The term vectorization is also used for talking about using SIMD bas
 - [vectorization05a.ipynb](vectorization05a.ipynb): generating SQL and dataframe transformation code with one syntax
 - [vectorization05b.ipynb](vectorization05b.ipynb): generating SQL and dataframe transformation code with one syntax - an example pipeline
 - [vectorization06.ipynb](vectorization06.ipynb): many ways to describe data transformations in python
+- [vectorization07.ipynb](vectorization07.ipynb): aggregation functions
+- [vectorization08.ipynb](vectorization08.ipynb): window functions

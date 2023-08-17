@@ -7,7 +7,7 @@ import pydiverse.transform as pdt
 from pydiverse.pipedag import Flow, Stage, Table, materialize
 from pydiverse.transform import λ
 from pydiverse.transform.core.verbs import (
-    mutate, select, alias, group_by, summarise, arrange,
+    mutate, alias, group_by, summarise, arrange, build_query,
 )
 from pydiverse.transform.eager import PandasTableImpl
 from pydiverse.transform.lazy import SQLTableImpl
@@ -132,4 +132,3 @@ if __name__ == "__main__":
     flow = get_pipeline()
     result = flow.run()
     assert result.successful
-    flow.run(flow["t2_transformed_data"]["task_transform_sql"])

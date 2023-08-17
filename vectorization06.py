@@ -10,6 +10,7 @@ from pydiverse.transform.core.verbs import (
     left_join,
     mutate,
     select, alias,
+    build_query,
 )
 from pydiverse.transform.eager import PandasTableImpl
 from pydiverse.transform.lazy import SQLTableImpl
