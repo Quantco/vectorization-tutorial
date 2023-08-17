@@ -8,7 +8,7 @@ dependencies:
   - pandas
   - polars
   - ibis-framework[duckdb]
-  - pydiverse-pipedag
+  - pydiverse-pipedag=0.6.3
   - pydiverse-transform
   - lightgbm
   - xgboost
