@@ -1,0 +1,41 @@
+instances:
+  __any__:
+    network_interface: "127.0.0.1"
+    auto_table:
+      - "pandas.DataFrame"
+      - "polars.DataFrame"
+      - "pydiverse.transform.Table"
+      - "ibis.api.Table"
+      - "sqlalchemy.sql.expression.TextClause"
+      - "sqlalchemy.sql.expression.Selectable"
+
+    fail_fast: true
+    instance_id: vectorization
+    stage_commit_technique: READ_VIEWS
+    table_store:
+      class: "pydiverse.pipedag.backend.table.SQLTableStore"
+      args:
+        url: "duckdb:////tmp/pipedag/{instance_id}/db.duckdb"
+        create_database_if_not_exists: true
+
+        print_materialize: true
+        print_sql: true
+
+      local_table_cache:
+        store_input: true
+        store_output: true
+        use_stored_input_as_cache: true
+        class: "pydiverse.pipedag.backend.table.cache.ParquetTableCache"
+        args:
+          base_path: "/tmp/pipedag/table_cache"
+
+    blob_store:
+      class: "pydiverse.pipedag.backend.blob.FileBlobStore"
+      args:
+        base_path: "/tmp/pipedag/blobs"
+
+    lock_manager:
+      class: "pydiverse.pipedag.backend.lock.NoLockManager"
+
+    orchestration:
+      class: "pydiverse.pipedag.engine.SequentialEngine"
