@@ -13,7 +13,7 @@
 version: 1
 metadata:
   content_hash:
-    linux-64: c2daef90cb818f1ef7f0ccf856998ba2f7105d786c564c983f15062fc0f76c4b
+    linux-64: cf98a5ebb45b97c62c01661848a20485cfc89ea199b2bac375b55ebf7c596d1f
   channels:
   - url: conda-forge
     used_env_vars: []
@@ -1926,16 +1926,16 @@ package:
   category: main
   optional: false
 - name: click
-  version: 8.1.6
+  version: 8.1.7
   manager: conda
   platform: linux-64
   dependencies:
     __unix: ''
     python: '>=3.8'
-  url: https://conda.anaconda.org/conda-forge/noarch/click-8.1.6-unix_pyh707e725_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/click-8.1.7-unix_pyh707e725_0.conda
   hash:
-    md5: 64dbb3b205546691a61204d1cfb208e3
-    sha256: 73392cf4851bf7c89e99518effea01d531360a4894c4218e768d5e03e89d7943
+    md5: f3ad426304898027fc619827ff428eca
+    sha256: f0016cbab6ac4138a429e28dbcb904a90305b34b3fe41a9b89d697c90401caec
   category: main
   optional: false
 - name: colorama
@@ -2940,17 +2940,17 @@ package:
   category: main
   optional: false
 - name: tornado
-  version: 6.3.2
+  version: 6.3.3
   manager: conda
   platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     python: '>=3.10,<3.11.0a0'
     python_abi: 3.10.*
-  url: https://conda.anaconda.org/conda-forge/linux-64/tornado-6.3.2-py310h2372a71_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/tornado-6.3.3-py310h2372a71_0.conda
   hash:
-    md5: 1c510e74c87dc9b8fe1f7f9e8dbcef96
-    sha256: 56bcfc59da0f6fc78afe79447b8b1327e9149a52c9dc6ee805ac73bf18ac22b6
+    md5: dfb49d3ac440e1a236080f9c300e642f
+    sha256: 38d517c89f79f3ff0d8f3f1ce46218e0f8e3a3fea743e7f3661eb913919aa94e
   category: main
   optional: false
 - name: traitlets
@@ -4346,7 +4346,7 @@ package:
   category: main
   optional: false
 - name: poetry-dynamic-versioning
-  version: 0.25.0
+  version: 1.0.0
   manager: conda
   platform: linux-64
   dependencies:
@@ -4354,10 +4354,10 @@ package:
     jinja2: '>=2.11.1,<4'
     python: '>=3.7'
     tomlkit: '>=0.4'
-  url: https://conda.anaconda.org/conda-forge/noarch/poetry-dynamic-versioning-0.25.0-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/poetry-dynamic-versioning-1.0.0-pyhd8ed1ab_0.conda
   hash:
-    md5: 5f8c59d38581fafcb945236e52fa97cc
-    sha256: 34c94466911f8110d003f13fa191b0b777edb72a9039d10a6385ae0238bc2cb9
+    md5: 82dd4731a4341e4a78579a89cb6f1e29
+    sha256: e72997f2b921d9544840934fc61b05936bb59f3ad1435b2fcdcd39f72e5b5614
   category: main
   optional: false
 - name: pooch
@@ -5051,7 +5051,7 @@ package:
   category: main
   optional: false
 - name: pydiverse-pipedag
-  version: 0.6.3
+  version: 0.6.6
   manager: conda
   platform: linux-64
   dependencies:
@@ -5072,10 +5072,10 @@ package:
     sqlalchemy: '>=1.4.39'
     structlog: '>=22.1.0'
     typing-extensions: '>=4.1.0,<5.0.0'
-  url: https://conda.anaconda.org/conda-forge/noarch/pydiverse-pipedag-0.6.3-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/pydiverse-pipedag-0.6.6-pyhd8ed1ab_0.conda
   hash:
-    md5: 563a448723b49ed0187cec18047be9c8
-    sha256: c5e498544f816314318ff0fdb0fa0685e71bf0f2cbec0792004ea09d93ffa452
+    md5: dc901566e1ce5e92fe5d571613550c1a
+    sha256: 8caaa64d1f5680fd02974f2618aa611ff9c808113b132d0ec73603b10c5df874
   category: main
   optional: false
 - name: python-duckdb
