@@ -9,7 +9,22 @@ This is the basis of the vectorization principle.
 
 This tutorial was created for a CEOI workshop in August 2023 and might not be kept up-to-date.
 
-Disclaimer: The term vectorization is also used for talking about using SIMD based instruction level parallelism provided by CPUs. Here, we talk about vectorization as a library design pattern for structural data transformation code – applying operations to vectors instead of scalars.
+Disclaimer: The term vectorization is also used for talking about using SIMD based instruction level parallelism 
+provided by CPUs. Here, we talk about vectorization as a library design pattern for structural data transformation 
+code – applying operations to vectors instead of scalars.
+
+## Setting up the environment for running the python files and jupyter notebooks in this repository
+
+Follow https://mamba.readthedocs.io/en/latest/micromamba-installation.html to download the micromamba executable. 
+Please put it in `~/bin/micromamba`.
+Then run the following commands to create a new environment and install the required packages:
+
+```bash
+MICROMAMBA=~/bin/micromamba
+eval "$("$MICROMAMBA" shell hook -s bash)"
+micromamba create -y -n vectorization -f conda-lock.yml
+micromamba activate vectorization
+```
 
 ## Table of Contents:
 
