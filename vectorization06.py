@@ -6,6 +6,7 @@ import sqlalchemy as sa
 import ibis
 import pydiverse.transform as pdt
 from pydiverse.pipedag import Flow, Stage, Table, materialize
+from pydiverse.transform.core.dtypes import String
 from pydiverse.transform.core.verbs import (
     left_join,
     mutate,
@@ -24,7 +25,7 @@ def transmute(tbl, **kwargs):
 @pdt.verb
 def trim_all_str(tbl):
     for col in tbl:
-        if col._.dtype == "str":
+        if isinstance(col._.dtype, String):
             tbl[col] = col.strip()
     return tbl
 

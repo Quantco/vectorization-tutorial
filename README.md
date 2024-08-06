@@ -15,8 +15,8 @@ code – applying operations to vectors instead of scalars.
 
 ## Setting up the environment for running the python files and jupyter notebooks in this repository
 
-Follow https://mamba.readthedocs.io/en/latest/micromamba-installation.html to download the micromamba executable. 
-Please put it in `~/bin/micromamba`.
+Follow https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html to download the micromamba executable. 
+Please put it in `~/bin/micromamba` or adjust the instructions below accordingly.
 Then run the following commands to create a new environment and install the required packages:
 
 ```bash

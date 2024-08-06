@@ -37,7 +37,7 @@ def task_polars(titanic: pl.DataFrame):
     return (
         titanic
         .with_columns(age_bucket=(((pl.col("age") + 4.999) / 10).round() * 10))
-        .groupby("age_bucket")
+        .group_by("age_bucket")
         .agg(samples=pl.col("age_bucket").count(),
              survival_likelyhood=pl.col("survived").mean())
         .sort("age_bucket")

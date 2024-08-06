@@ -6,6 +6,7 @@ import xgboost
 import xgboost as xgb
 from pydiverse.pipedag import Blob, Flow, Stage, Table, materialize
 from pydiverse.transform import aligned, λ
+from pydiverse.transform.core.dtypes import String
 from pydiverse.transform.core.verbs import (
     alias,
     collect,
@@ -27,7 +28,7 @@ def transmute(tbl, **kwargs):
 @pdt.verb
 def trim_all_str(tbl):
     for col in tbl:
-        if col._.dtype == "str":
+        if isinstance(col._.dtype, String):
             tbl[col] = col.strip()
     return tbl
 
