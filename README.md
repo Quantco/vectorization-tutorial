@@ -15,7 +15,7 @@ code – applying operations to vectors instead of scalars.
 
 ## Try it yourself in a GitHub Codespace (VS Code)
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Quantco/vectorization-tutorial/tree/codespaces)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Quantco/vectorization-tutorial/)
 
 Default options to run a small codespace are perfectly fine (free-tier is provided by GitHub).
 
