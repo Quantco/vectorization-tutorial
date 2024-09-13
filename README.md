@@ -13,19 +13,28 @@ Disclaimer: The term vectorization is also used for talking about using SIMD bas
 provided by CPUs. Here, we talk about vectorization as a library design pattern for structural data transformation 
 code – applying operations to vectors instead of scalars.
 
-## Try it yourself in a Codespace
+## Try it yourself in a GitHub Codespace (VS Code)
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Quantco/vectorization-tutorial/tree/codespaces)
 
-The first time you enter the codespace, it takes some time to set up the environment and install all dependencies (the script doing that might only run ~1min after starting the codespace). To run the code, activate the environment via
+Default options to run a small codespace are perfectly fine (free-tier is provided by GitHub).
+
+The first time you enter the codespace, it takes some time to set up the environment and install all dependencies 
+(the script doing that might only run ~1min after starting the codespace). 
+Please, take a coffee break and just wait...
+
+After environment is installed, it should be possible to open jupyter notebooks (*.ipynb files) in VS Code. 
+Install extensions in case VS Code is asking, and choose python environment `vectorization`.
+
+To run code in the terminal, activate the environment via
 
 ```bash
 source .devcontainer/.bashrc
 ```
 
-Then you can run the code directly in VS Code. If you are asked to install some extensions, do this. Alternatively, you can run it in a jupyter notebook by executing `jupyter notebook` in the project directory.
+## Try it yourself on your local machine
 
-## Setting up the environment for running the python files and jupyter notebooks in this repository
+### Setting up the environment for running the python files and jupyter notebooks in this repository
 
 Follow https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html to download the micromamba executable. 
 Please put it in `~/bin/micromamba` or adjust the instructions below accordingly.
