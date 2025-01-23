@@ -1,16 +1,16 @@
 # introduction to the vectorizing principle
 
 This repo is used to illustrate the vectorization principle in a tutorial. In data science applications,
-large amounts of data are processed, and dynamically typed and interpreted languages like python, R 
+large amounts of data are processed, and dynamically typed and interpreted languages like python, R.
 or Matlab are often used to perform a job in just a few lines based on a highly dynamic library universe.
 The heavy lifting is done within those libraries written in C, C++ or Fortran. Thus the user API to those libraries
-must be based on handing around large amounts of data instead of single values. 
+must be based on handing around large amounts of data instead of single values.
 This is the basis of the vectorization principle.
 
 This tutorial was created for a CEOI workshop in August 2023 and might not be kept up-to-date.
 
-Disclaimer: The term vectorization is also used for talking about using SIMD based instruction level parallelism 
-provided by CPUs. Here, we talk about vectorization as a library design pattern for structural data transformation 
+Disclaimer: The term vectorization is also used for talking about using SIMD based instruction level parallelism
+provided by CPUs. Here, we talk about vectorization as a library design pattern for structural data transformation
 code – applying operations to vectors instead of scalars.
 
 ## Try it yourself in a GitHub Codespace (VS Code)
@@ -19,32 +19,28 @@ code – applying operations to vectors instead of scalars.
 
 Default options to run a small codespace are perfectly fine (free-tier is provided by GitHub).
 
-The first time you enter the codespace, it takes some time to set up the environment and install all dependencies 
-(the script doing that might only run ~1min after starting the codespace). 
+The first time you enter the codespace, it takes some time to set up the environment and install all dependencies
+(the script doing that might only run ~1min after starting the codespace).
 Please, take a coffee break and just wait...
 
-After environment is installed, it should be possible to open jupyter notebooks (*.ipynb files) in VS Code. 
+After environment is installed, it should be possible to open jupyter notebooks (*.ipynb files) in VS Code.
 Install extensions in case VS Code is asking, and choose python environment `vectorization`.
 
 To run code in the terminal, activate the environment via
 
 ```bash
-source .devcontainer/.bashrc
+pixi shell
 ```
 
 ## Try it yourself on your local machine
 
 ### Setting up the environment for running the python files and jupyter notebooks in this repository
 
-Follow https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html to download the micromamba executable. 
-Please put it in `~/bin/micromamba` or adjust the instructions below accordingly.
+Follow https://pixi.sh to install pixi.
 Then run the following commands to create a new environment and install the required packages:
 
 ```bash
-MICROMAMBA=~/bin/micromamba
-eval "$("$MICROMAMBA" shell hook -s bash)"
-micromamba create -y -n vectorization -f conda-lock.yml
-micromamba activate vectorization
+pixi shell
 ```
 
 ## Table of Contents:

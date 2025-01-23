@@ -1,0 +1,24 @@
+[project]
+name = "vectorization-tutorial"
+channels = ["conda-forge"]
+platforms = ["linux-64", "linux-aarch64", "win-64", "osx-arm64"]
+
+[tasks]
+
+[dependencies]
+python = "3.11.*"
+numpy = "*"
+pandas = ">=2.2.1"
+polars = ">=0.20.16,<1"
+duckdb-engine = ">=0.11.2"
+python-duckdb = ">=0.10.1,<1"
+pydiverse-pipedag = "==0.7.2"
+pydiverse-transform = "*"
+ibis-framework = "*"
+lightgbm = "*"
+xgboost = "*"
+scikit-learn = "*"
+matplotlib-base = "*"
+# connectorx = ">=0.3.2"
+jupyter = "*"
+ipykernel = ">=6.29.5,<7"
