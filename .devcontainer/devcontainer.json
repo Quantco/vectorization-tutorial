@@ -1,6 +1,19 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-  },
-  "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh"
+    "name": "vectorization-tutorial",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": "..",
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {},
+        "extensions": ["ms-python.python", "ms-toolsai.jupyter", "charliermarsh.ruff", "GitHub.copilot"]
+      }
+    },
+    "features": {
+      "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "mounts": ["source=${localWorkspaceFolderBasename}-pixi,target=${containerWorkspaceFolder}/.pixi,type=volume"],
+    "postCreateCommand": "sudo chown vscode .pixi && pixi install && git config --global --add safe.directory ${containerWorkspaceFolder}",
+    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
 }
