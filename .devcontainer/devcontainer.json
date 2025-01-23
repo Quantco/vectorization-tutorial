@@ -7,12 +7,10 @@
     "customizations": {
       "vscode": {
         "settings": {},
-        "extensions": ["ms-python.python", "ms-toolsai.jupyter", "charliermarsh.ruff", "GitHub.copilot"]
+        "extensions": ["ms-python.python", "ms-toolsai.jupyter", "tamasfe.even-better-toml", "charliermarsh.ruff"]
       }
     },
-    "features": {
-      "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-    },
+    "features": {},
     "mounts": ["source=${localWorkspaceFolderBasename}-pixi,target=${containerWorkspaceFolder}/.pixi,type=volume"],
     "postCreateCommand": "sudo chown vscode .pixi && pixi install && git config --global --add safe.directory ${containerWorkspaceFolder}",
     "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
