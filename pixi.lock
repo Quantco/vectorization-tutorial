@@ -249,7 +249,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/pyarrow-hotfix-0.6-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pycparser-2.22-pyh29332c3_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-pipedag-0.7.2-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-transform-0.2.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-transform-0.1.5-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pydot-3.0.4-py311h38be061_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pygments-2.19.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pynng-0.8.1-py311hfdbb021_0.conda
@@ -575,7 +575,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/pyarrow-hotfix-0.6-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pycparser-2.22-pyh29332c3_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-pipedag-0.7.2-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-transform-0.2.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-transform-0.1.5-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/pydot-3.0.4-py311hec3470c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pygments-2.19.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/pynng-0.8.1-py311h89d996e_0.conda
@@ -894,7 +894,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/pyarrow-hotfix-0.6-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pycparser-2.22-pyh29332c3_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-pipedag-0.7.2-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-transform-0.2.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-transform-0.1.5-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/pydot-3.0.4-py311h267d04e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pygments-2.19.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/pynng-0.8.1-py311h155a34a_0.conda
@@ -1190,7 +1190,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/pyarrow-hotfix-0.6-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pycparser-2.22-pyh29332c3_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-pipedag-0.7.2-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-transform-0.2.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-transform-0.1.5-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/pydot-3.0.4-py311h1ea47a8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pygments-2.19.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/pynng-0.8.1-py311hda3d55a_0.conda
@@ -9408,18 +9408,18 @@ packages:
   license_family: BSD
   size: 108081
   timestamp: 1711366653034
-- conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-transform-0.2.0-pyhd8ed1ab_0.conda
-  sha256: 5d603fa21a19d8de18586ff6aab80b2701420a35f788eca507952982199a5e1b
-  md5: cf355c17339f9fdad763169e00e70b44
+- conda: https://conda.anaconda.org/conda-forge/noarch/pydiverse-transform-0.1.5-pyhd8ed1ab_0.conda
+  sha256: 9aaa656ff3744f2f8952fd49d1643a605d992e247b974036c593a6698971486d
+  md5: 8487e9ac1d55a15fe1e5ef63ded12ab5
   depends:
   - numpy >=1.23.1
   - pandas >=1.4.3
   - python >=3.9,<4.0
-  - sqlalchemy >=1.4.27
+  - sqlalchemy >=1.4.39
   license: BSD-3-Clause
   license_family: BSD
-  size: 53475
-  timestamp: 1725255875560
+  size: 55946
+  timestamp: 1713584182702
 - conda: https://conda.anaconda.org/conda-forge/linux-64/pydot-3.0.4-py311h38be061_0.conda
   sha256: 77758d62fcb5f0ff0fb0d83d8e029b0f3d9c12d52b4281d807f508f64a3ab81a
   md5: 44ef14ea8a33120526be769ab647b32b
